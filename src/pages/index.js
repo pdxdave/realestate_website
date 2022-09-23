@@ -1,3 +1,4 @@
+import Home from './HomePage'
 import About from './About'
 import Error from './ErrorPage'
 import Featured from './FeaturedListings'
@@ -7,6 +8,7 @@ import Realtors from './RealtorsPage'
 import SingleListing from './SingleListingsPage'
 
 export {
+    Home,
     About,
     Error,
     Featured,
