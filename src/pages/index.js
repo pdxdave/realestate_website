@@ -6,6 +6,7 @@ import New from './NewListings'
 import Listings from './ListingsPage'
 import Realtors from './RealtorsPage'
 import SingleListing from './SingleListingsPage'
+import Contact from './Contact'
 
 export {
     Home,
@@ -15,5 +16,6 @@ export {
     New,
     Listings,
     Realtors,
-    SingleListing
+    SingleListing,
+    Contact
 }
