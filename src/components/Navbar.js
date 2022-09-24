@@ -2,8 +2,10 @@ import styled from 'styled-components'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {Link} from 'react-router-dom'
 import {navLinks} from '../utils/misc'
+import { useMobileContext } from '../context/nav_context'
 
 const Navbar = () => {
+  const {openMobile} = useMobileContext()
   return (
     <Wrapper>
         <div className="nav-center">
@@ -11,8 +13,8 @@ const Navbar = () => {
             <Link to="/">
                 <h4>The Real<span style={{color:"orange"}}>Estate</span> Group</h4>
             </Link>
-            <button type="button" className='nav-toggle'>
-              <GiHamburgerMenu />
+            <button type="button" className='nav-toggle' onClick={openMobile}>
+              <GiHamburgerMenu  />
             </button>
           </div>
           <ul className='nav-links'>

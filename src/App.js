@@ -1,10 +1,11 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import {Home, About, Error, Listings, Realtors, Contact} from './pages'
-import {Navbar} from './components'
+import {MobileNav, Navbar} from './components'
 function App() {
   return (
     <BrowserRouter>
     <Navbar />
+    <MobileNav />
       <Routes>
         <Route exact path="/" element={<Home />}/>
         <Route exact path="/about" element={<About />}/>

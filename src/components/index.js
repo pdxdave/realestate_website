@@ -1,5 +1,7 @@
 import Navbar from './Navbar'
+import MobileNav from './MobileNav'
 
 export {
-    Navbar
+    Navbar,
+    MobileNav
 }
