@@ -120,3 +120,10 @@ p {
   background-size: cover;
 	background-repeat: no-repeat;
 }
+.aboutHero {
+  min-height: calc(70vh);
+	background: url('./images/about.jpg');
+  background-position: center;
+  background-size: cover;
+	background-repeat: no-repeat;
+}

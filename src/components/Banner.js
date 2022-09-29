@@ -4,7 +4,7 @@ const Banner = ({title1, title2, title3, title4}) => {
   
   return (
     <Wrapper>
-      <h2 className="banner_info">{title1} {title2}<span style={{color: "orange"}}>{title3}</span>{title4}</h2>
+      <h2 className="banner_info">{title1} {title2}<span style={{color: "#F79901"}}>{title3}</span>{title4}</h2>
     </Wrapper>
   )
 }

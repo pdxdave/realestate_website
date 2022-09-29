@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
     <Hero hero="homeHero">
-      <Banner title1="The" title2="Real" title3="Estate" title4="Group">
+      <Banner title1="The" title2="Real" title3="Estate" title4=" Group">
       </Banner>
     </Hero>
     <section>

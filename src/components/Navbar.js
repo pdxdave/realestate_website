@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
             <Link to="/">
-              <h4>The Real<span style={{color:"orange"}}>Estate</span> Group</h4>
+              <h4>The Real<span style={{color:"#F79901"}}>Estate</span> Group</h4>
             </Link>
             <button type="button" className='hamburger' onClick={openMobile}>
               <FiMenu />
@@ -42,7 +42,7 @@ const Wrapper = styled.nav`
   .nav-center {
     width: 90vw;
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1200px;
     /* align-items: center; */
   }
   .nav-header {
@@ -59,6 +59,7 @@ const Wrapper = styled.nav`
     font-size: 1.6rem;
     background: transparent;
     border: none;
+    cursor: pointer;
   }
   .nav-links {
     display: none;
