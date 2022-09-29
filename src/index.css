@@ -57,7 +57,7 @@ h4,
 h5 {
   letter-spacing: 0.1rem;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 h1 {
   font-size: 2.5rem;
@@ -103,4 +103,20 @@ p {
   h4 {
     line-height: 1;
   }
+}
+
+.homeHero,
+.realtorsHero{
+	min-height: calc(100vh - 5rem);
+	background: url('./images/home.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.realtorsHero {
+  min-height: calc(70vh);
+	background: url('./images/realtors.jpg');
+  background-position: center;
+  background-size: cover;
+	background-repeat: no-repeat;
 }

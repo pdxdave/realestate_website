@@ -1,16 +1,20 @@
 import {Link} from 'react-router-dom'
 import {FaTimes} from 'react-icons/fa'
-import {navLinks} from '../utils/misc'
+import {navLinks} from '../utilities/misc'
 import styled from 'styled-components'
 import { useMobileContext } from '../context/nav_context'
 
 const MobileNav = () => {
     const {isMobileOpen, closeMobile } = useMobileContext()
-    console.log(isMobileOpen)
+    // console.log(isMobileOpen)
+    // console.log('stuff')
     return (
         <Wrapper>
             <div className={`${isMobileOpen ? 'mobile show-mobile' : 'mobile'}`}>
                 <div className="mobile-header">
+                {/* <Link to="/">
+                     <h4 onClick={closeMobile}>The Real<span style={{color:"orange"}}>Estate</span> Group</h4>
+                </Link> */}
                 <h4>The Real<span style={{color:"orange"}}>Estate</span> Group</h4>
                     <button className='close-btn' type="button">
                         <FaTimes onClick={closeMobile}/>
@@ -45,7 +49,7 @@ const Wrapper = styled.div`
     display: block;
     text-align: left;
     font-size: 1.2rem;
-    color: var(--clr-grey-700);
+    color: gray;
     text-transform: capitalize;
     padding: 1rem 1.5rem;
   }

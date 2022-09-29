@@ -1,9 +1,7 @@
-
-
-const ErrorPage = () => {
-  return (
-    <div>ErrorPage</div>
-  )
-}
-
-export default ErrorPage
+function ErrorPage() {
+    return (
+      <div>ErrorPage</div>
+    )
+  }
+  
+  export default ErrorPage

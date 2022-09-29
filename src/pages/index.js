@@ -1,21 +1,16 @@
-import Home from './HomePage'
-import About from './About'
-import Error from './ErrorPage'
-import Featured from './FeaturedListings'
-import New from './NewListings'
-import Listings from './ListingsPage'
-import Realtors from './RealtorsPage'
-import SingleListing from './SingleListingsPage'
-import Contact from './Contact'
+import Home from "./HomePage";
+import Listings from "./ListingsPage";
+import Contact from "./ContactPage";
+import About from "./AboutPage";
+import Error from './ErrorPage';
+import Realtors from "./RealtorsPage";
+
 
 export {
     Home,
-    About,
-    Error,
-    Featured,
-    New,
     Listings,
+    Contact,
+    About,
     Realtors,
-    SingleListing,
-    Contact
+    Error
 }
