@@ -4,7 +4,8 @@ import Services from "./Services";
 import Featured from "./Featured";
 import Property from './Property';
 import Loading from './Loading';
-import Error from './Error'
+import Error from './Error';
+import NewListing from './NewListing';
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     Featured,
     Property,
     Loading,
-    Error
+    Error,
+    NewListing
 }

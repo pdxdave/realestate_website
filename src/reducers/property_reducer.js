@@ -14,7 +14,7 @@ const property_reducer = (state, action) => {
     }
     if(action.type === GET_PROPERTIES_SUCCESS){
         const featured_properties = action.payload.filter((property) => property.featured === true)
-        const newListing_properties = action.payload.filter((property) => property.newListing === true)
+        const newListing_properties = action.payload.filter((property) => property.newlisting === true)
         return {
             ...state,
             properties_loading: false,

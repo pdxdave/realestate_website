@@ -1,6 +1,6 @@
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
-import { Services, Featured } from '../components'
+import { Services, Featured, NewListing } from '../components'
 
 const HomePage = () => {
   return (
@@ -10,6 +10,7 @@ const HomePage = () => {
     </Hero>
     <Services />
     <Featured />
+    <NewListing />
     </>
   )
 }

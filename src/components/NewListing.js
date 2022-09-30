@@ -5,15 +5,15 @@ import Error from './Error'
 import Loading from './Loading'
 import Property from './Property'
 
-const Featured = () => {
+const NewListing = () => {
 
   const {
     properties_loading: loading,
     properties_error: error,
-    featured_properties: featured
+    newListing_properties: newListings
   } = usePropertiesContext()
 
-  // console.log(featured)
+  console.log(newListings)
 
   if(loading){
     return <Loading  style={{textAlign: "center"}}/>
@@ -28,7 +28,7 @@ const Featured = () => {
             <h3>Featured<span className='title-highlite'> Properties</span></h3>
         </div>
         <div className='page-setting featured'>
-           {featured.map((property) => {
+           {newListings.map((property) => {
             return <Property  key={property.id} {...property}/>
            })}
         </div>
@@ -55,15 +55,5 @@ const Wrapper = styled.section`
 
 
 `
-export default Featured
+export default NewListing
 
-/*
-
-.page-setting {
-  width: 90vw;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-*/
