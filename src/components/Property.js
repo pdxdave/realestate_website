@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import {FaBed, FaBath} from 'react-icons/fa'
 import {TbZoomInArea} from 'react-icons/tb'
+import {Link} from 'react-router-dom'
 
 const Property = ({city, state, url, sqft, dwelling, bed, bath, price, tagline, id}) => {
   return (
@@ -19,7 +20,10 @@ const Property = ({city, state, url, sqft, dwelling, bed, bath, price, tagline, 
           <span> <FaBed /> {bed} bed{bed > 1 ? 's' : ''}</span>
           <span><FaBath /> {bath} bath{bath > 1 ? 's' : ''}</span>
         </footer>
-        <button className='btn'>more info</button>
+        <Link to={`/listings/${id}`}>
+            <button className='btn'>more info</button>
+        </Link>
+        
     </Wrapper>
   )
 }

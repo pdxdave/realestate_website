@@ -1,7 +1,10 @@
 import {
     GET_PROPERTIES_BEGIN,
     GET_PROPERTIES_SUCCESS,
-    GET_PROPERTIES_ERROR
+    GET_PROPERTIES_ERROR,
+    GET_SINGLE_PROPERTY_BEGIN,
+    GET_SINGLE_PROPERTY_SUCCESS,
+    GET_SINGLE_PROPERTY_ERROR
 } from '../actions'
 
 const property_reducer = (state, action) => {
@@ -28,6 +31,29 @@ const property_reducer = (state, action) => {
             ...state,
             properties_error: true,
             properties_loading: false
+        }
+    }
+
+    // GET SINGLE PROPERTY
+    if(action.type === GET_SINGLE_PROPERTY_BEGIN){
+        return {
+            ...state,
+            single_property_error: false,
+            single_property_loading: true
+        }
+    }
+    if(action.type === GET_SINGLE_PROPERTY_SUCCESS){
+        return {
+            ...state,
+            single_property_loading: false,
+            single_property: action.payload
+        }
+    }
+    if(action.type === GET_SINGLE_PROPERTY_ERROR){
+        return {
+            ...state,
+            single_property_loading: false,
+            single_property_error: true
         }
     }
 

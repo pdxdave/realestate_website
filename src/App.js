@@ -2,6 +2,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import {Home, About, Contact, Listings, Error, Realtors} from './pages'
 import {Navbar, MobileNav, Footer} from './components'
+import SingleProperty from './pages/SinglePropertyPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/listings" element={<Listings />}/>
         <Route path="/realtors" element={<Realtors />}/>
         <Route path="/contact" element={<Contact />}/>
+        <Route path="/listings/:id" element={<SingleProperty />}/>
         <Route path="*" element={<Error />}/>
       </Routes>
       <Footer />

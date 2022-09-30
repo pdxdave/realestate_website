@@ -4,6 +4,7 @@ import Contact from "./ContactPage";
 import About from "./AboutPage";
 import Error from './ErrorPage';
 import Realtors from "./RealtorsPage";
+import SingleProperty from "./SinglePropertyPage";
 
 
 export {

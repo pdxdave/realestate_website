@@ -7,7 +7,7 @@ import Loading from './Loading';
 import Error from './Error';
 import NewListing from './NewListing';
 import Title from './Title';
-import Footer from './Footer'
+import Footer from './Footer';
 
 export {
     Navbar,
