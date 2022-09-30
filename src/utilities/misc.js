@@ -22,3 +22,5 @@ export const navLinks = [
         url: '/contact'
     }
 ]
+
+export const property_url = "https://pdx-realestate.netlify.app/api/property"

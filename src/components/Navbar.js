@@ -38,6 +38,7 @@ const Wrapper = styled.nav`
   display: flex;
   justify-content: center;
   background: #fff;
+  z-index: 9;
 
   .nav-center {
     width: 90vw;

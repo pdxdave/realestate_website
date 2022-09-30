@@ -127,3 +127,19 @@ p {
   background-size: cover;
 	background-repeat: no-repeat;
 }
+.page-setting {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.btn-small {
+  width: 80%;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 6px;
+  padding: .5em 0;
+  cursor: pointer;
+  background-color: #5D668D;
+  color: #fff;
+}

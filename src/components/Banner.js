@@ -11,7 +11,6 @@ const Banner = ({title1, title2, title3, title4}) => {
 
 const Wrapper = styled.div`
 
-
   .banner_info {
     position: absolute;
     top: 50%;

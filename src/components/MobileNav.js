@@ -15,7 +15,7 @@ const MobileNav = () => {
                 {/* <Link to="/">
                      <h4 onClick={closeMobile}>The Real<span style={{color:"orange"}}>Estate</span> Group</h4>
                 </Link> */}
-                <h4>The Real<span style={{color:"orange"}}>Estate</span> Group</h4>
+                <h4>The Real<span style={{color:"#F79901"}}>Estate</span> Group</h4>
                     <button className='close-btn' type="button">
                         <FaTimes onClick={closeMobile}/>
                     </button>
@@ -34,6 +34,7 @@ const MobileNav = () => {
 
 const Wrapper = styled.div`
     text-align: center;
+    
     .mobile-header {
         display: flex;
         justify-content: space-between;
