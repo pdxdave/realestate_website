@@ -6,6 +6,8 @@ import Property from './Property';
 import Loading from './Loading';
 import Error from './Error';
 import NewListing from './NewListing';
+import Title from './Title';
+import Footer from './Footer'
 
 export {
     Navbar,
@@ -15,5 +17,7 @@ export {
     Property,
     Loading,
     Error,
-    NewListing
+    NewListing,
+    Title,
+    Footer
 }

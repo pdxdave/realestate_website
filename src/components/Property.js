@@ -66,6 +66,9 @@ const Wrapper = styled.article`
     border: none;
     padding: .25em 0;
     margin-top: .25em;
+    background: #5D668D;
+    color: #fff;
+    cursor: pointer;
   }
 
 `

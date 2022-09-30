@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
 import Property from './Property'
+import Title from './Title'
 
 const NewListing = () => {
 
@@ -16,7 +17,7 @@ const NewListing = () => {
   console.log(newListings)
 
   if(loading){
-    return <Loading  style={{textAlign: "center"}}/>
+    return <Loading  msg="Your New Listings Are Loading..."/>
   }
   if(error){
     return <Error />
@@ -24,9 +25,7 @@ const NewListing = () => {
 
   return (
     <Wrapper >
-        <div className='title'>
-            <h3>Featured<span className='title-highlite'> Properties</span></h3>
-        </div>
+        <Title title1="New" title2="Listings"/>
         <div className='page-setting featured'>
            {newListings.map((property) => {
             return <Property  key={property.id} {...property}/>
@@ -37,13 +36,6 @@ const NewListing = () => {
 }
 
 const Wrapper = styled.section`
-
-  .title {
-    text-align: center;
-  }
-  .title-highlite {
-     color: #F79901
-  }
   
   .featured {
     display: grid;

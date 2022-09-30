@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Error from './Error'
 import Loading from './Loading'
 import Property from './Property'
+import Title from './Title'
 
 const Featured = () => {
 
@@ -16,7 +17,7 @@ const Featured = () => {
   // console.log(featured)
 
   if(loading){
-    return <Loading  style={{textAlign: "center"}}/>
+    return <Loading  msg="Your Featured Properties Are Loading..."/>
   }
   if(error){
     return <Error />
@@ -24,9 +25,7 @@ const Featured = () => {
 
   return (
     <Wrapper >
-        <div className='title'>
-            <h3>Featured<span className='title-highlite'> Properties</span></h3>
-        </div>
+        <Title title1="Featured" title2="Properties"/>
         <div className='page-setting featured'>
            {featured.map((property) => {
             return <Property  key={property.id} {...property}/>
@@ -38,13 +37,6 @@ const Featured = () => {
 
 const Wrapper = styled.section`
 
-  .title {
-    text-align: center;
-  }
-  .title-highlite {
-     color: #F79901
-  }
-  
   .featured {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
@@ -52,8 +44,6 @@ const Wrapper = styled.section`
     column-gap: 20px;
     justify-items: center;
   }
-
-
 `
 export default Featured
 

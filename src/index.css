@@ -143,3 +143,11 @@ p {
   background-color: #5D668D;
   color: #fff;
 }
+
+.title {
+  text-align: center;
+  padding-top: 2em;
+}
+.title-highlite {
+   color: #F79901
+}

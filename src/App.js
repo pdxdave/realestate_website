@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 import {Home, About, Contact, Listings, Error, Realtors} from './pages'
-import {Navbar, MobileNav} from './components'
+import {Navbar, MobileNav, Footer} from './components'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />}/>
         <Route path="*" element={<Error />}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
