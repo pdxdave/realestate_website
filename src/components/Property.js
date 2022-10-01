@@ -2,15 +2,17 @@ import styled from 'styled-components'
 import {FaBed, FaBath} from 'react-icons/fa'
 import {TbZoomInArea} from 'react-icons/tb'
 import {Link} from 'react-router-dom'
+import { formatPrice } from '../utilities/helper'
 
 const Property = ({city, state, url, sqft, dwelling, bed, bath, price, tagline, id}) => {
+  
   return (
     <Wrapper>
          <img src={url} alt="location" />
          <header className='property-header'>
-          <p>${price}</p>
-          <p>{tagline}</p>
-          <p>{dwelling}</p>
+          <p className='property-price'>{formatPrice(price)}</p>
+          <p className='property-tagline'>{tagline}</p>
+          <p className='proptery-dwelling'>{dwelling}</p>
           <p>{city}<span>, {state} </span></p>
          </header>
       
@@ -29,7 +31,7 @@ const Property = ({city, state, url, sqft, dwelling, bed, bath, price, tagline, 
 }
 
 const Wrapper = styled.article`
-  /* border: 1px solid red; */
+ 
 
   width: 400px;
   max-width: 100%;
@@ -41,7 +43,8 @@ const Wrapper = styled.article`
   img{
     width: 100%;
     height: 300px;
-    object-fit: scale-down;
+    object-fit: fill;
+    /* object-fit: scale-down; */
     padding: 0px;
     margin: 0px;
   }
@@ -61,7 +64,6 @@ const Wrapper = styled.article`
     font-size: 1rem;
   }
 
-
   .btn {
     width: 100%;
     font-family: inherit;
@@ -75,6 +77,10 @@ const Wrapper = styled.article`
     cursor: pointer;
   }
 
+  .property-tagline {
+    font-weight: bold;
+  }
+  
 `
 
 export default Property

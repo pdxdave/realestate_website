@@ -34,7 +34,7 @@ export const PropertiesProvider = ({children}) => {
         try {
             const response = await axios.get(url)
             const properties = response.data 
-            console.log(properties)
+            // console.log(properties)
             // console.log(properties)
             dispatch({ type: GET_PROPERTIES_SUCCESS, payload: properties})
         } catch (error) {

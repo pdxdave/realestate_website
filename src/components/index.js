@@ -8,6 +8,8 @@ import Error from './Error';
 import NewListing from './NewListing';
 import Title from './Title';
 import Footer from './Footer';
+import Filters from "./Filters";
+import PropertyList from "./PropertyList";
 
 export {
     Navbar,
@@ -19,5 +21,7 @@ export {
     Error,
     NewListing,
     Title,
-    Footer
+    Footer,
+    Filters,
+    PropertyList
 }

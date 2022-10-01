@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 
 /********* VARIABLES ***********/
@@ -126,6 +126,13 @@ p {
   background-position: center;
   background-size: cover;
 	background-repeat: no-repeat;
+}
+.about-story {
+  background: url('./images/jogging_woman.jpg');
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .page-setting {
   width: 90vw;
