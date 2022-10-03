@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import { useParams} from 'react-router-dom';
 import { usePropertiesContext } from '../context/property_context';
 import { single_property_url as url} from '../utilities/misc';

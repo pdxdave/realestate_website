@@ -12,13 +12,13 @@ const Footer = () => {
           </address>
           <div className='social-container'>
             <div>
-               <img src='/images/facebook.svg' className='social-icon'/>
+               <img src='/images/facebook.svg' className='social-icon' alt="facebook"/>
             </div>
             <div className='social-item'>
-              <img src='/images/snapchat.svg' className='social-icon'/>
+              <img src='/images/snapchat.svg' className='social-icon' alt="snapchat"/>
             </div>
              <div> 
-                <img src='/images/twitter.svg' className='social-icon'/>
+                <img src='/images/twitter.svg' className='social-icon' alt="twitter"/>
              </div>
           </div>
           <div>

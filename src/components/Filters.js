@@ -11,8 +11,7 @@ const Filters = () => {
       max_price,
       price,
       lastname,
-      city,
-      dwelling
+      city
     },
       updateFilters,
       clearFilters,
