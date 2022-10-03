@@ -94,9 +94,13 @@ const Wrapper = styled.main`
     @media (max-width: 1270px){
         .grid-container {
             grid-template-columns: 1fr;
+            /* min-height: calc(100vh - (5em + 20em)); */
         }
         .formless-side {
             display: none;
+        }
+        .btn-contact {
+            margin-bottom: 3em;
         }
     }
 `
