@@ -1,7 +1,12 @@
 
 import styled from 'styled-components'
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactPage = () => {
+    const [state, handleSubmit] = useForm("mwkzbbzb");
+  if (state.succeeded) {
+      return <p>Thank You. We Will Get Back To You Soon!</p>;
+  }
   return (
     <Wrapper>
         <div className="grid-container">
@@ -10,20 +15,35 @@ const ContactPage = () => {
                     <h2>Let's Talk <span style={{color: "#F79901"}}>Homes!</span></h2>
                 </div>
                 <div className="form-container">
-                    <form action="https://formspree.io/f/spinout11@hotmail.com" method="POST">
+                    <form action="https://formspree.io/f/mwkzbbzb" method="POST" onSubmit={handleSubmit}>
                         <div className="form-control">
                             <label htmlFor="name"></label>
                             <input type="text" placeholder='name'/>
+                            <ValidationError 
+                                prefix="Name" 
+                                field="name"
+                                errors={state.errors}
+                            />
                         </div>
                         <div className="form-control">
                             <label htmlFor="email"></label>
                             <input type="text" placeholder='email'/>
+                            <ValidationError 
+                                prefix="Email" 
+                                field="email"
+                                errors={state.errors}
+                            />
                         </div>
                         <div className="form-control">
                             <label htmlFor="message"></label>
                             <textarea name="" id="" cols="20" rows="5" placeholder='message'/>
+                            <ValidationError 
+                                prefix="Message" 
+                                field="message"
+                                errors={state.errors}
+                            />
                         </div>
-                    <button className='btn-contact'>Send</button>
+                    <button className='btn-contact' type="submit" disabled={state.submitting}>Send</button>
                     </form>
                 </div>{/* end of form container */}
                 
@@ -34,7 +54,12 @@ const ContactPage = () => {
     </Wrapper>
   )
 }
-
+function App() {
+    return (
+      <ContactPage />
+    );
+  }
+  export default App;
 const Wrapper = styled.main`
 
     .grid-container {
@@ -105,4 +130,4 @@ const Wrapper = styled.main`
     }
 `
 
-export default ContactPage
+// export default ContactPage
