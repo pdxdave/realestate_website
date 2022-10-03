@@ -16,11 +16,11 @@ const ContactPage = () => {
                             <input type="text" placeholder='name'/>
                         </div>
                         <div className="form-control">
-                            <label htmlFor="name"></label>
-                            <input type="text" placeholder='name'/>
+                            <label htmlFor="email"></label>
+                            <input type="text" placeholder='email'/>
                         </div>
                         <div className="form-control">
-                            <label htmlFor="name"></label>
+                            <label htmlFor="message"></label>
                             <textarea name="" id="" cols="30" rows="10" placeholder='message'/>
                         </div>
                     <button className='btn-contact'>Send</button>
