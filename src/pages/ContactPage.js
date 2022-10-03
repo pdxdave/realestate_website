@@ -21,7 +21,7 @@ const ContactPage = () => {
                         </div>
                         <div className="form-control">
                             <label htmlFor="message"></label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder='message'/>
+                            <textarea name="" id="" cols="20" rows="5" placeholder='message'/>
                         </div>
                     <button className='btn-contact'>Send</button>
                     </form>
