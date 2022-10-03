@@ -24,6 +24,7 @@ const SinglePropertyPage = () => {
 
   useEffect(() => {
     fetchSingleProperty(`${url}${id}`)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
   if(loading){
