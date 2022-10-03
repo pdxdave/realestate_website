@@ -7,7 +7,7 @@ const ContactPage = () => {
         <div className="container">
         <div className='contact-header'>
           <div className='test'>
-            <h1>Let's Talk <span style={{color: "#F79901"}}>Homes!</span></h1>
+            <h1>Let's Talk <span style={{color: "var(--clr-orange-accent)"}}>Homes!</span></h1>
           </div>
           
         </div>

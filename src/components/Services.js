@@ -33,7 +33,7 @@ const Wrapper = styled.section`
         padding: 2em 3em;
     }
     .title-highlite {
-        color: #F79901
+        color: var(--clr-orange-accent);
     }
 
     .article-container {

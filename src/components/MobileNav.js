@@ -11,7 +11,7 @@ const MobileNav = () => {
         <Wrapper>
             <div className={`${isMobileOpen ? 'mobile show-mobile' : 'mobile'}`}>
                 <div className="mobile-header">
-                <h4>The Real<span style={{color:"#F79901"}}>Estate</span> Group</h4>
+                <h4>The Real<span style={{color:"var(--clr-orange-accent)"}}>Estate</span> Group</h4>
                     <button className='close-btn' type="button">
                         <FaTimes onClick={closeMobile}/>
                     </button>

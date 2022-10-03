@@ -12,7 +12,7 @@ const ContactPage = () => {
         <div className="grid-container">
             <div className='form-side'>
                 <div className='contact-title'>
-                    <h2>Let's Talk <span style={{color: "#F79901"}}>Homes!</span></h2>
+                    <h2>Let's Talk <span style={{color: "var(--clr-orange-accent)"}}>Homes!</span></h2>
                 </div>
                 <div className="form-container">
                     <form action="https://formspree.io/f/mwkzbbzb" method="POST" onSubmit={handleSubmit}>
@@ -54,12 +54,7 @@ const ContactPage = () => {
     </Wrapper>
   )
 }
-function App() {
-    return (
-      <ContactPage />
-    );
-  }
-  export default App;
+
 const Wrapper = styled.main`
 
     .grid-container {
@@ -129,5 +124,10 @@ const Wrapper = styled.main`
         }
     }
 `
-
+function App() {
+    return (
+      <ContactPage />
+    );
+  }
+  export default App;
 // export default ContactPage

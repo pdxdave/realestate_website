@@ -6,7 +6,7 @@ const Footer = () => {
     <Wrapper >
         <div className='page-setting test'>
           <address>
-            <h4>The Real<span style={{color: "#F79901"}}>Estate</span> Group</h4>
+            <h4>The Real<span style={{color: "var(--clr-orange-accent)"}}>Estate</span> Group</h4>
             2544 SW Salmon St. <br />
             Portland, OR 97215
           </address>

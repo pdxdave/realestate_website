@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
             <Link to="/">
-              <h4>The Real<span style={{color:"#F79901"}}>Estate</span> Group</h4>
+              <h4>The Real<span style={{color:"var(--clr-orange-accent)"}}>Estate</span> Group</h4>
             </Link>
             <button type="button" className='hamburger' onClick={openMobile}>
               <FiMenu />
