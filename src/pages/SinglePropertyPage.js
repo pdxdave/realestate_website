@@ -60,7 +60,7 @@ const SinglePropertyPage = () => {
       <div className='test'>
       <h3>{newlisting ? 'New Listing!' : ''}{featured ? 'Featured Property!' : ''}</h3>
       <div className="property-divider">
-          <ProcessImages images={images}/>
+          <ProcessImages images={images} />
           <div className='property-specs'>
              <h4>{tagline}</h4>
              <p className='address'>{address}, {city} {state}</p>
@@ -114,10 +114,14 @@ span {
 @media (min-width: 900px){
   .property-divider {
     grid-template-columns: 1fr 1fr;
+    /* border: 1px solid red; */
+    
   }
   .test {
-    height: calc(100vh - (5em + 13em));
+    /* height: calc(100vh - (5em + 13em)); */
+    height: calc(100vh - 5em);
   }
+
 }
 
 `

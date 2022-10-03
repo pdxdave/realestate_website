@@ -25,6 +25,7 @@ const ProcessImages = ({images=[{url: ''}]}) => {
 }
 
 const Wrapper = styled.section`
+
 .main {
     height: 600px;
   }
