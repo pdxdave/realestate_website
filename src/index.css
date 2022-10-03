@@ -114,32 +114,23 @@ p {
 	background-repeat: no-repeat;
 }
 .realtorsHero {
-  min-height: calc(70vh);
+  min-height: calc(60vh);
 	background: url('./images/realtors.jpg');
   background-position: center;
   background-size: cover;
 	background-repeat: no-repeat;
 }
-.aboutHero {
-  min-height: calc(70vh);
-	background: url('./images/about.jpg');
-  background-position: center;
-  background-size: cover;
-	background-repeat: no-repeat;
-}
-.about-story {
-  background: url('./images/jogging_woman.jpg');
-  height: 70vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .page-setting {
   width: 90vw;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
 }
+.page-clear {
+  min-height: calc(100vh - (5em + 4rem));
+}
+
 .btn-small {
   width: 80%;
   font-size: 1.4em;
@@ -155,6 +146,29 @@ p {
   text-align: center;
   padding-top: 2em;
 }
+
 .title-highlite {
    color: #F79901
 }
+
+/* .contact-header {
+  background: url('./images/welcome.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+
+.form-side {
+  background: url('./images/welcome.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.formless-side {
+  background: url('./images/formless.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

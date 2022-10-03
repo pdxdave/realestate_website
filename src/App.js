@@ -11,7 +11,7 @@ function App() {
     <MobileNav />
       <Routes>
         <Route exact path="/" element={<Home />}/>
-        <Route path="/about" element={<About />}/>
+        {/* <Route path="/about" element={<About />}/> */}
         <Route path="/listings" element={<Listings />}/>
         <Route path="/realtors" element={<Realtors />}/>
         <Route path="/contact" element={<Contact />}/>

@@ -14,8 +14,6 @@ const Featured = () => {
     featured_properties: featured
   } = usePropertiesContext()
 
-  // console.log(featured)
-
   if(loading){
     return <Loading  msg="Your Featured Properties Are Loading..."/>
   }
@@ -46,14 +44,3 @@ const Wrapper = styled.section`
   }
 `
 export default Featured
-
-/*
-
-.page-setting {
-  width: 90vw;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-*/

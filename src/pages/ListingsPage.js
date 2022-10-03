@@ -1,16 +1,15 @@
 import styled from "styled-components"
 import { Filters, PropertyList } from "../components"
-import Sort from "../components/Sort"
+
 
 
 const ListingsPage = () => {
     return (
       <main>
-        <Wrapper className="page-setting">
+        <Wrapper className="page-setting page-clear">
           <div className="properties">
             <Filters />
             <div>
-              <Sort />
               <PropertyList />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import {services} from '../utilities/services'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 const Services = () => {
   return (
@@ -14,7 +15,9 @@ const Services = () => {
                     <img src={service.img} alt={service.title} className="services-img" />
                     <h4>{service.title}</h4>
                     <p>{service.text}</p>
-                    <button className='btn-small'>More Info</button>
+                    <Link to="/realtors"> 
+                        <button className='btn-small'>More Info</button>
+                    </Link>
                 </article>
                 )
             })}

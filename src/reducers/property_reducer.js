@@ -8,6 +8,8 @@ import {
 } from '../actions'
 
 const property_reducer = (state, action) => {
+
+    
     // GET ALL PROPERTIES
     if(action.type === GET_PROPERTIES_BEGIN){
         return {

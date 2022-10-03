@@ -31,7 +31,6 @@ const Wrapper = styled.div`
     width: 600px;
     border-radius: 8px;
   }
-    
  }
 `
 

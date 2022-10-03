@@ -10,6 +10,8 @@ import Title from './Title';
 import Footer from './Footer';
 import Filters from "./Filters";
 import PropertyList from "./PropertyList";
+import ServicesExtended from "./ServicesExtended";
+import ProcessImages from "./ProcessImages";
 
 export {
     Navbar,
@@ -23,5 +25,7 @@ export {
     Title,
     Footer,
     Filters,
-    PropertyList
+    PropertyList,
+    ServicesExtended,
+    ProcessImages
 }

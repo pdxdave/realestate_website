@@ -44,7 +44,6 @@ const Wrapper = styled.nav`
     width: 90vw;
     margin: 0 auto;
     max-width: 1200px;
-    /* align-items: center; */
   }
   .nav-header {
     display: flex;

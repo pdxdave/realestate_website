@@ -8,6 +8,4 @@ const Title = ({title1, title2}) => {
   )
 }
 
-
-
 export default Title

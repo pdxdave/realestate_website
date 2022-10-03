@@ -14,7 +14,7 @@ const NewListing = () => {
     newListing_properties: newListings
   } = usePropertiesContext()
 
-  console.log(newListings)
+
 
   if(loading){
     return <Loading  msg="Your New Listings Are Loading..."/>
@@ -44,8 +44,6 @@ const Wrapper = styled.section`
     column-gap: 20px;
     justify-items: center;
   }
-
-
 `
 export default NewListing
 

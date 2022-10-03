@@ -6,15 +6,11 @@ import { useMobileContext } from '../context/nav_context'
 
 const MobileNav = () => {
     const {isMobileOpen, closeMobile } = useMobileContext()
-    // console.log(isMobileOpen)
-    // console.log('stuff')
+    
     return (
         <Wrapper>
             <div className={`${isMobileOpen ? 'mobile show-mobile' : 'mobile'}`}>
                 <div className="mobile-header">
-                {/* <Link to="/">
-                     <h4 onClick={closeMobile}>The Real<span style={{color:"orange"}}>Estate</span> Group</h4>
-                </Link> */}
                 <h4>The Real<span style={{color:"#F79901"}}>Estate</span> Group</h4>
                     <button className='close-btn' type="button">
                         <FaTimes onClick={closeMobile}/>

@@ -1,6 +1,5 @@
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
-import styled from 'styled-components'
 
 const AboutPage = () => {
     return (

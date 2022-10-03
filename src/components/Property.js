@@ -44,7 +44,6 @@ const Wrapper = styled.article`
     width: 100%;
     height: 300px;
     object-fit: fill;
-    /* object-fit: scale-down; */
     padding: 0px;
     margin: 0px;
   }
