@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Loading = ({msg}) => {
   return (
-    <Wrapper className="page-setting">
+    <Wrapper >
       <div>{msg}</div>
     </Wrapper>
   )

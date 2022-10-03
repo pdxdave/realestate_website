@@ -82,9 +82,9 @@ const SinglePropertyPage = () => {
 
 const Wrapper = styled.main`
 
-.test {
+/* .test {
   height: calc(100vh - (5em + 13em));
-}
+} */
 
 .property-divider {
   display: grid;
@@ -114,6 +114,9 @@ span {
 @media (min-width: 900px){
   .property-divider {
     grid-template-columns: 1fr 1fr;
+  }
+  .test {
+    height: calc(100vh - (5em + 13em));
   }
 }
 
