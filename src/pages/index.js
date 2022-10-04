@@ -1,6 +1,6 @@
 import Home from "./HomePage";
 import Listings from "./ListingsPage";
-import Contact from "./ContactPage";
+import ContactForm from "./ContactPage";
 import Error from './ErrorPage';
 import Realtors from "./RealtorsPage";
 import SingleProperty from "./SinglePropertyPage";
@@ -9,7 +9,7 @@ import SingleProperty from "./SinglePropertyPage";
 export {
     Home,
     Listings,
-    Contact,
+    ContactForm,
     Realtors,
     Error,
     SingleProperty
