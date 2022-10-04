@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
-import { ServicesExtended } from "../components";
+import { RealtorProfile, ServicesExtended } from "../components";
 
 const RealtorsPage = () => {
   return (
@@ -10,6 +10,7 @@ const RealtorsPage = () => {
     </Hero>
     <div className="page-clear page-setting">
       <ServicesExtended />
+      <RealtorProfile />
     </div>
     
    </> 

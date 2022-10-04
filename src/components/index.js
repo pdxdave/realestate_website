@@ -12,6 +12,7 @@ import Filters from "./Filters";
 import PropertyList from "./PropertyList";
 import ServicesExtended from "./ServicesExtended";
 import ProcessImages from "./ProcessImages";
+import RealtorProfile from "./RealtorProfile";
 
 export {
     Navbar,
@@ -27,5 +28,6 @@ export {
     Filters,
     PropertyList,
     ServicesExtended,
-    ProcessImages
+    ProcessImages,
+    RealtorProfile
 }
