@@ -124,10 +124,10 @@ const Wrapper = styled.main`
         }
     }
 `
-function App() {
-    return (
-      <ContactPage />
-    );
-  }
-  export default App;
-// export default ContactPage
+// function App() {
+//     return (
+//       <ContactPage />
+//     );
+//   }
+//   export default App;
+export default ContactPage

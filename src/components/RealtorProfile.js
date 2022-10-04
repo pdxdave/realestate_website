@@ -71,7 +71,6 @@ blockquote {
 footer p {
   margin-top: 1em;
 }
-
 `
 
 export default RealtorProfile
