@@ -107,16 +107,18 @@ p {
 }
 
 
-.homeHero,
-.realtorsHero{
+.homeHero{
 	min-height: calc(100vh - 5rem);
 	background: url('./images/home.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+
 .realtorsHero {
-  min-height: calc(60vh);
+  min-height: calc(80vh);
+  height: auto;
 	background: url('./images/realtors.jpg');
   background-position: center;
   background-size: cover;
