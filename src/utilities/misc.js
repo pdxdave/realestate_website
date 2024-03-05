@@ -18,5 +18,8 @@ export const navLinks = [
     }
 ]
 
-export const property_url = "https://pdx-realestate.netlify.app/api/property"
-export const single_property_url = `https://pdx-realestate.netlify.app/api/single-property?id=`
+// export const property_url = "https://pdx-realestate.netlify.app/api/property"
+// export const single_property_url = `https://pdx-realestate.netlify.app/api/single-property?id=`
+
+export const property_url = "https://dpm-realestate-api.netlify.app/api/property"
+export const single_property_url = `https://dpm-realestate-api.netlify.app/api/single-property?id=`
